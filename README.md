@@ -1,6 +1,6 @@
 
 ### 1.Comment garantir par notre protocole que la fonction de airdrop soit exécutable uniquement sur notre site internet ?
-##### Hypothèse
+##### Hypothèse :
 On peux mettre en place un « code secret » à envoyer avec la transaction. Au moment de la transaction, ce code est vérifié, s’il n’est pas valide la fonction revert.
 
 ##### Solutions mis en place : 
@@ -16,13 +16,13 @@ On peux mettre en place un « code secret » à envoyer avec la transaction. A
 
 ### 2. Comment modifier le smart contract à l'avenir ?
 
-##### Hypothèse
+##### Hypothèse :
 Il est impossible de modifier un smart contract en soi ça serait contraire à l’immuabilité de la blockchain. Mais il est possible de modifier son état et que la logique sous-jacente soit modifiée à tout moment sans perdre les données précédentes, du coup le client interagit toujours avec le même contrat.
 
 ##### Solutions mis en place : 
 - Proxy : Pattern UUPS
 
-###### Limite
+##### Limites :
 - On doit implémenter la fonctionnalité de mise à jour dans chaque nouveau contrat. Sinon, on ne sera plus en mesure de les mettre à jour.
 
 
